@@ -4,7 +4,7 @@
     <img width="600" alt="nasiam" src="img/NASiam_layout.png">
 </p>
 
-This is a PyTorch implementation of the [NASiam paper](https://arxiv.org/abs/2011.10566).
+This is the official PyTorch implementation of the NASiam paper.
 ## Preparation
 
 - Install the most recent version of [PyTorch](https://pytorch.org/get-started/locally/) (the code was tested on version 1.12.1).
@@ -172,4 +172,4 @@ If you found this code useful for your research, please consider citing the NASi
 
 ### Aknowledgements
 
-This code is based upon [SimSiam](https://github.com/facebookresearch/simsiam), [MoCo][https://github.com/facebookresearch/moco] and [SimCLR](https://github.com/leftthomas/SimCLR).
+This code is based upon [SimSiam](https://github.com/facebookresearch/simsiam), [MoCo](https://github.com/facebookresearch/moco) and [SimCLR](https://github.com/leftthomas/SimCLR).
