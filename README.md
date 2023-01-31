@@ -16,7 +16,7 @@ This is a PyTorch implementation of the [NASiam paper](https://arxiv.org/abs/201
 To search for a SimSiam arch for 100 epochs on CIFAR-10 on a single GPU, run:
 
 ```bash
-  cd SimSiam && python main_search.py -a resnet18 --gpu 0 --lr 0.03 --wd 5e-4 --dataset cifar10 --fix-pred-lr [your CIFAR folder]
+  cd SimSiam && python main_search.py -a resnet18 --gpu 0 --lr 0.06 --wd 5e-4 --dataset cifar10 --fix-pred-lr [your CIFAR folder]
 ```
 
 ### MoCo
@@ -44,7 +44,7 @@ All scripts use the default hyper-parameters as described in their respective or
 To do unsupervised pre-training of a ResNet-18 model on CIFAR on a single GPU for 800 epochs, run:
 ```bash
 
-cd SimSiam && python main_simsiam.py -a resnet18 --epochs 800 --lr 0.03 --wd 5e-4 -g cifar10_resnet18 --fix-pred-lr [your CIFAR folder]
+cd SimSiam && python main_simsiam.py -a resnet18 --epochs 800 --lr 0.06 --wd 5e-4 -g cifar10_resnet18 --fix-pred-lr [your CIFAR folder]
 ```
 
 To pre-train a ResNet-50 model on ImageNet on an 8-GPU machine for 100 epochs, run:
@@ -63,7 +63,7 @@ cd SimSiam && python main_simsiam.py \
 To do unsupervised pre-training of a ResNet-18 model on CIFAR on a single GPU for 800 epochs, run:
 ```bash
 
-cd MoCo && python main_moco.py -a resnet18 --epochs 800 --lr 0.03 --wd 5e-4 -g cifar10_resnet18 --fix-pred-lr [your CIFAR folder]
+cd MoCo && python main_moco.py -a resnet18 --epochs 800 --lr 0.06 --wd 5e-4 -g cifar10_resnet18 [your CIFAR folder]
 ```
 
 To pre-train a ResNet-50 model on ImageNet on an 8-GPU machine for 100 epochs, run:
@@ -106,7 +106,7 @@ For linear classification we recommend to use the `pretrained_model_best.pth.tar
 
 To train a supervised linear classifier on frozen features/weights on CIFAR on a single GPU, run:
 ```bash
-cd SimSiam && python main_lincls.py -a resnet18 --pretrained [your checkpoint path] --lr 30.0 --dataset cifar10 
+cd SimSiam && python main_lincls.py -a resnet18 --pretrained [your checkpoint path] --lr 30.0 --dataset cifar10 [your CIFAR folder]
 ```
 
 To train a supervised linear classifier on frozen features/weights on an 8-GPU machine, run:
@@ -123,7 +123,7 @@ cd SimSiam && python main_lincls.py \
 
 To train a supervised linear classifier on frozen features/weights on CIFAR on a single GPU, run:
 ```bash
-cd MoCo && python main_lincls.py -a resnet18 --pretrained [your checkpoint path] --lr 30.0 --dataset cifar10 
+cd MoCo && python main_lincls.py -a resnet18 --pretrained [your checkpoint path] --lr 30.0 --dataset cifar10 [your CIFAR folder]
 ```
 
 To train a supervised linear classifier on frozen features/weights on an 8-GPU machine, run:
@@ -141,7 +141,7 @@ cd MoCo && python main_lincls.py \
 
 To train a supervised linear classifier on frozen features/weights on CIFAR on a single GPU, run:
 ```bash
-cd SimCLR && python linear.py --pretrained [your checkpoint path] --dataset cifar10 
+cd SimCLR && python linear.py --pretrained [your checkpoint path] --dataset cifar10 [your CIFAR folder]
 ```
 
 To train a supervised linear classifier on frozen features/weights on an 8-GPU machine, run:
