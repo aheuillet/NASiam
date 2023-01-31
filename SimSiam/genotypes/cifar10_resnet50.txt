@@ -1,0 +1,1 @@
+Genotype(encoder=[['linear_silu'], ['linear_hardswish'], ['linear_hardswish'], ['linear_hardswish'], ['linear_silu'], ['linear_silu']], predictor=[['linear_hardswish'], ['linear_hardswish'], ['avgpool_3x3'], ['linear_silu']])

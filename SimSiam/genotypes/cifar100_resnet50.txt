@@ -1,0 +1,1 @@
+Genotype(encoder=[['linear_hardswish'], ['linear_hardswish'], ['linear_hardswish'], ['identity'], ['linear_hardswish'], ['linear_mish']], predictor=[['linear_hardswish'], ['linear_mish'], ['linear_mish'], ['linear_relu']])
