@@ -4,7 +4,7 @@
     <img width="600" alt="nasiam" src="img/NASiam_layout.png">
 </p>
 
-This is the official PyTorch implementation of the NASiam paper.
+This is the official PyTorch implementation of the [NASiam paper](http://arxiv.org/abs/2302.00059).
 ## Preparation
 
 - Install the most recent version of [PyTorch](https://pytorch.org/get-started/locally/) (the code was tested on version 1.12.1).
@@ -167,7 +167,10 @@ If you found this code useful for your research, please consider citing the NASi
 ```
 @Article{heuillet2023NASiam,
   author  = {Alexandre Heuillet and Hedi Tabia and Hichem Arioui},
-  title   = {NASiam: Efficient Representation Learning using Neural Architecture Search for Siamese Networks}
+  title   = {NASiam: Efficient Representation Learning using Neural Architecture Search for Siamese Networks},
+  url = {https://arxiv.org/abs/2302.00059},
+  publisher={arXiv}
+  }
 ```
 
 ### Aknowledgements
